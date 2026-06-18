@@ -1,0 +1,38 @@
+# Files excluded from the published archive. `.pubignore` only affects
+# `flutter pub publish`; it does NOT influence `.gitignore` semantics.
+
+# Build artifacts and tool caches. `pub` already excludes `.dart_tool/`
+# implicitly; listed explicitly here for clarity.
+build/
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+
+# IDE / editor configs.
+.idea/
+.vscode/
+*.iml
+
+# Internal tooling and reports — not shipped to consumers.
+tool/
+coverage/
+coverage/SUMMARY.md
+
+# Internal build spec — not part of the public docs.
+address verify BUILD.md
+
+# Standalone platform-setup doc; consumer-facing setup lives in README.md.
+PLATFORM_SETUP.md
+
+# Example app: keep the runnable Dart entry point + pubspec/README for
+# pub.dev's `example` rendering. Heavy native scaffolds are not needed.
+example/.dart_tool/
+example/.idea/
+example/*.iml
+example/android/
+example/ios/
+example/build/
+example/pubspec.lock
+example/.flutter-plugins
+example/.flutter-plugins-dependencies
+example/.metadata
