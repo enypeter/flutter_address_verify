@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.1.1 - 2026-06-18
+
+- Bump dependencies to latest majors: `file_picker` ^11.0.0,
+  `geolocator` ^14.0.0, `geocoding` ^4.0.0, and
+  `google_mlkit_text_recognition` ^0.15.0.
+- Migrate to file_picker 11's static `FilePicker.pickFiles` API
+  (replaces the removed `FilePicker.platform` accessor). No public
+  API changes; behavior is unchanged.
+
 ## 0.1.0 - 2026-05-28
 
 First feature-complete release of `address_verify`.

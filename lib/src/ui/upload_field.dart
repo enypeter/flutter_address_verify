@@ -48,7 +48,7 @@ class _UploadFieldState extends State<UploadField> {
   Future<void> _pick() async {
     setState(() => _error = null);
     try {
-      final result = await FilePicker.platform.pickFiles(
+      final result = await FilePicker.pickFiles(
         type: FileType.custom,
         allowedExtensions:
             widget.allowedFormats.map((f) => f.name).toList(),

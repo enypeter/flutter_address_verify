@@ -1,6 +1,6 @@
 name: address_verify
 description: On-device proof-of-address pre-screening for Flutter. Runs OCR and fuses fuzzy address, name, and GPS signals into a confidence score; not a verification authority.
-version: 0.1.0
+version: 0.1.1
 repository: https://github.com/enypeter/flutter_address_verify
 issue_tracker: https://github.com/enypeter/flutter_address_verify/issues
 
@@ -17,12 +17,12 @@ environment:
 
 dependencies:
   crypto: ^3.0.0
-  file_picker: ^8.0.0
+  file_picker: ^11.0.0
   flutter:
     sdk: flutter
-  geocoding: ^3.0.0
-  geolocator: ^12.0.0
-  google_mlkit_text_recognition: ^0.13.0
+  geocoding: ^4.0.0
+  geolocator: ^14.0.0
+  google_mlkit_text_recognition: ^0.15.0
   image: ^4.0.0
   pdfx: ^2.6.0
 
